@@ -10,7 +10,7 @@ from urllib.parse import urljoin, urlparse
 from lxml import etree as ET
 import sys
 
-sys.setrecursionlimit(1000000):
+sys.setrecursionlimit(1000000)
 async def request(url, headers, timeout=None):
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers, timeout=timeout) as resp:
